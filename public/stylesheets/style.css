@@ -3,7 +3,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 
-/*BODY Style*/
+/* NAV style */
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.nav li {
+    font-size:12pt;
+    display:block;
+    float: left;
+    height: 70px;
+    width: 100px; /*new*/
+    text-align: center; /*new*/
+    transition: all 0.2s ease-in-out;
+}
+.nav .home {
+    background: rgba(50, 0, 0, 1);
+}
+.nav .about {
+    background: rgba(100, 0, 0, 1);
+}
+.nav .projects {
+    background: rgba(150, 0, 0, 1);
+}
+.nav .contact {
+    background: rgba(200, 0, 0, 1);
+}
+.nav li a {
+    font-family: FontAwesome;
+    color:#eee;
+    font-size:10pt;
+    text-decoration: none;
+    display: block;
+    padding:15px;
+}
+.nav li i {
+    color:#fff;
+    padding:0 10px;
+}
+.nav li b {
+    padding: 15px 0;
+    display: none;
+}
+.nav a:hover {
+    color: #fff;
+}
+.nav a:hover i {
+    display: none;
+}
+.nav a:hover b {
+    display: block;
+}
+
+/* BODY Style */
 
 body {
     margin: 0;
@@ -97,16 +154,29 @@ h2, h3, h4, h5, h6 {
     margin: -3px;
 }
 
-h1 {
+h2.year {
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+h1.month {
     font-family: 'Parisienne', cursive;
     text-align: center;
     color: whitesmoke;
     font-size: 100px;
-    padding: 10px 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
 }
 
-#month {
+#grid-month {
     grid-column: 1 / 8;
+}
+#grid-year {
+    grid-column: 1/8;
 }
 
 .footer {

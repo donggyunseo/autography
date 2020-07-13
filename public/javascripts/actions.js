@@ -7,21 +7,18 @@ function originalColor (division) {
 }
 
 function weatherOutput (inputDate) {
-    fetch('http://localhost:3000/weather_log/2020/May')
+    console.log(inputDate)
+    fetch('http://localhost:3000/weather')
     .then(res => res.json())
     .then(data => {
-        alert(data.weather);
+        document.getElementById(inputDate).innerHTML = data[0].weather;
     })
 }
 
 function dayOutput (inputDate) {
-    var words = inputDate.split("_");
-    var y, m, d;
-
-    fetch('http://localhost:3000/weather_log/2020/May')
+    fetch('http://localhost:3000/weather')
     .then(res => res.json())
     .then(data => {
-        for ()
-        document.getElementById(inputDate).innerHTML = data.month + data.day;
+        document.getElementById(inputDate).innerHTML = data[0].month + ' ' + data[0].day;
     })
-}
+} 

@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/days.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src = "javascripts/actions.js"></script>
     </head>
     
@@ -10,7 +11,25 @@
         <!--Top-->
         <section class = "header">
             <div>
+                <div class="nav">
+                    <ul>
+                        <li class="home">
+                            <a href="#home"><i class="material-icons" style = "font-size: 40px;">home</i><b>Home</b></a>
+                        </li>
+                        <li class="about">
+                            <a href="#about"><i class="material-icons" style = "font-size: 40px;">person</i><b>About</b></a>
+                        </li>
+                        <li class="projects">
+                            <a href="#projects"><i class="material-icons" style = "font-size: 40px;"></i><b>Friend</b></a>
+                        </li>
+                        <li class="contact">
+                            <a href="#contact"><i class="material-icons" style = "font-size: 40px;">settings</i><b>Settings</b></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--
                 <h2 id='writeButton'>WRITE</h2>
+                -->
             </div>
         </section>
         <section class = "contents">
@@ -21,7 +40,8 @@
             <!--Middle-->
             <!--Calender-->
             <div class = "middle_contents">
-                <div id="month"><h1>2020 June</h1></div>
+                <div id="grid-year"><h2 class = "year">2020</h2></div>
+                <div id="grid-month"><h1 class = "month">June</h1></div>
                 <div class="polaroid day"><h2>Sun</h2></div>
                 <div class="polaroid day"><h2>Mon</h2></div>
                 <div class="polaroid day"><h2>Tue</h2></div>
@@ -31,7 +51,7 @@
                 <div class="polaroid day"><h2>Sat</h2></div>
                 <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
                     <a href = "images/fulls/01.jpg">
-                        <h4 id="2020_May_31" onmouseover="weatherOutput('2020_May_31')" onmouseout="dayOutput('2020May31')">May 31</h4>
+                        <h4 id="d1" onmouseover="weatherOutput('d1')" onmouseout="dayOutput('d1')">May 31</h4>
                         <img src="images/thumbs/01.jpg">
                         <h5>The day is fresh-washed and fair, and there is a smell of tulips and narcissus in the air.</h5>
                     </a>
