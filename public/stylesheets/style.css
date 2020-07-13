@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
+/*BODY Style*/
+
+body {
+    margin: 0;
+    border: 0;
+    background-image: url("../images/autumn_color2.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.header {
+    height: 70px;
+    background-color: rgba(92, 35, 35, 0.5);
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: 30px, 130px, 30px;
+}
+
+.left_contents {
+    grid-column: 1 / 2;
+}
+
+.middle_contents {
+    grid-column: 2 / 3;
+
+    display: grid;
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(7, 1fr);
+    /*grid-auto-columns*/
+
+    /* grid-template-rows: repeat(4, 80px); */
+    grid-auto-rows: auto;
+
+    gap: 5px;
+}
+
+.right_contents {
+    width: 100px;
+    grid-column: 3 / 4;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    margin: -5px;
+}
+
+div.polaroid {
+    width: 120px;
+    height: 180px;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-origin: padding-box;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+div.polaroidFull {
+    grid-column: 1 / 8;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-origin: padding-box;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+div.polaroid.day {
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Sriracha', cursive;
+    text-align: center;
+    color: brown;
+    padding: 10px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 200;
+    line-height: 1.65;
+    margin: -3px;
+}
+
+h1 {
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 100px;
+    padding: 10px 20px;
+}
+
+#month {
+    grid-column: 1 / 8;
+}
+
+.footer {
+    min-height: 15px;
+    background-color: tan;
+    font-size: 0.7em;
+    color: whitesmoke;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/days.css">
+        <script src = "javascripts/actions.js"></script>
+    </head>
+    
+    <body>
+        <!--Top-->
+        <section class = "header">
+            <div>
+                <h2 id='writeButton'>WRITE</h2>
+            </div>
+        </section>
+        <section class = "contents">
+            <!--Left status-->
+            <div class = "left_contents">
+                <h5>1212</h5>
+            </div>
+            <!--Middle-->
+            <!--Calender-->
+            <div class = "middle_contents">
+                <div id="month"><h1>2020 June</h1></div>
+                <div class="polaroid day"><h2>Sun</h2></div>
+                <div class="polaroid day"><h2>Mon</h2></div>
+                <div class="polaroid day"><h2>Tue</h2></div>
+                <div class="polaroid day"><h2>Wed</h2></div>
+                <div class="polaroid day"><h2>Thu</h2></div>
+                <div class="polaroid day"><h2>Fri</h2></div>
+                <div class="polaroid day"><h2>Sat</h2></div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/01.jpg">
+                        <h4 id="2020_May_31" onmouseover="weatherOutput('2020_May_31')" onmouseout="dayOutput('2020May31')">May 31</h4>
+                        <img src="images/thumbs/01.jpg">
+                        <h5>The day is fresh-washed and fair, and there is a smell of tulips and narcissus in the air.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/02.jpg">
+                        <h4>June 1</h4>
+                        <img src = "images/thumbs/02.jpg">
+                        <h5>The sunshine pours in at the bath-room window and bores through the water in the bath-tub in lathes and planes of greenish-white. It cleaves the water into flaws like a jewel, and cracks it to bright light.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/03.jpg">
+                        <h4>2</h4>
+                        <img src = "images/thumbs/03.jpg">
+                        <h5>Little spots of sunshine lie on the surface of the water and dance, dance, and their reflections wobble deliciously over the ceiling; a stir of my finger sets them whirring, reeling.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/04.jpg">
+                        <h4>3</h4>
+                        <img src = "images/thumbs/04.jpg">
+                        <h5>I move a foot and the planes of light in the water jar.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/05.jpg">
+                        <h4>4</h4>
+                        <img src = "images/thumbs/05.jpg">
+                        <h5>I lie back and laugh, and let the green-white water, the sun-flawed beryl water, flow over me.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/06.jpg">
+                        <h4>5</h4>
+                        <img src = "images/thumbs/06.jpg">
+                        <h5>The day is almost too bright to bear, the green water covers me from the too bright day.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/07.jpg">
+                        <h4>6</h4>
+                        <img src = "images/thumbs/07.jpg">
+                        <h5>I will lie here awhile and play with the water and the sun spots.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/03.jpg">
+                        <h4>7</h4>
+                        <img src = "images/thumbs/03.jpg">
+                        <h5>The sky is blue and high.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/04.jpg">
+                        <h4>8</h4>
+                        <img src = "images/thumbs/04.jpg">
+                        <h5>A crow flaps by the window, and there is a whiff of tulips and narcissus in the air.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/05.jpg">
+                        <h4>9</h4>
+                        <img src = "images/thumbs/05.jpg">
+                        <h5>Of course I regret it. I mean there I was under umbrellas of fruit
+                            so red they had to be borne of Summer, and no other season.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/06.jpg">
+                        <h4>10</h4>
+                        <img src = "images/thumbs/06.jpg">
+                        <h5>Flip-flops and fishhooks. Ice cubes made of lemonade and sprigs 
+                            of mint to slip in blue glasses of tea. I was dusty, my ponytail
+                            all askew and the tips of my fingers ran, of course, red</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/07.jpg">
+                        <h4>11</h4>
+                        <img src = "images/thumbs/07.jpg">
+                        <h5>from the fruitwounds of cherries I plunked into my bucket
+                            and still—he must have seen some small bit of loveliness
+                            in walking his orchard with me.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/01.jpg">
+                        <h4>12</h4>
+                        <img src = "images/thumbs/01.jpg">
+                        <h5>He pointed out which trees
+                            were sweetest, which ones bore double seeds—puffing out
+                            the flesh and oh the surprise on your tongue with two tiny stones
+                            (a twin spit), making a small gun of your mouth.</h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/02.jpg">
+                        <h4>13</h4>
+                        <img src = "images/thumbs/02.jpg">
+                        <h5>Did I mention
+                            my favorite color is red? His jeans were worn and twisty
+                            around the tops of his boot; his hands thick but careful, 
+                            nimble enough to pull fruit from his trees without tearing
+                            the thin skin; the cherry dust and fingerprints on his eyeglasses. </h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/05.jpg">
+                        <h4>14</h4>
+                        <img src = "images/thumbs/05.jpg">
+                        <h5>
+                            Whatever else a modern feels when he looks at the night sky, he certainly feels that he is looking OUT- like one looking out from the saloon entrance onto the dark Atlantic or from the ligted porch upon dark and lonely moors. But if you accepted the medieval model you would feel like one looking IN. The Earth is ‘outside the city wall’. When the sun is up he dazzles us and we cannot see inside. Darkness, our own darkness, draws the veil and we catch a glimpse of the high pomps within; the vast, lighted concavity filled with music and life.
+                        </h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/06.jpg">
+                        <h4>15</h4>
+                        <img src = "images/thumbs/06.jpg">
+                        <h5>
+                            Suddenly quite near him there was a rifle shot. He heard the crack and smack and whistling ricochet among the rocks behind him. He dropped his torch and began feebly to trot. He lost the path and stumbled from boulder to boulder until treading on something which seemed smooth and round and solid in the star light he found himself in the top of a tree which grew twenty feet below. Scattering Greek currency among the leaves, he subsided quite gently from branch to branch and when he reached ground continued to roll over and over, down and down, caressed and momentarily stayed by bushes until at length he came to rest as though borne there by a benevolent Zephyr of classical myth, in a soft, dark, sweet-smelling, empty place where the only sound was the music of falling water. And there for a time the descent ended. Out of sight, out of hearing, the crowded boats put out from the beach; the men-o’ war sailed away and Fido slept.
+                        </h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/07.jpg">
+                        <h4>16</h4>
+                        <img src = "images/thumbs/07.jpg">
+                        <h5>
+                            There seemed to be a loud bang and a blinding flash of light all round me, and I felt a tremendous shock- no pain, only violent shock, such as you get from an electric terminal; with it a sense of utter weakness, a feeling of being stricken and shrivelled up to nothing. The sand bags in front of me receded into immense distance.
+                        </h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/01.jpg">
+                        <h4>17</h4>
+                        <img src = "images/thumbs/01.jpg">
+                        <h5>
+                            To keep my mind in control I numbered the blows, but after twenty lost count and could feel only the shapeless weight of pain, not tearing claws, for which I had prepared, but a gradual cracking apart of my whole being by some too-great force whose waves rolled up my spine till they were pent within my brain, to clash terribly together. Somewhere in the place a cheap clock ticked loudly, and it distressed me that their beating was not in time. I writhed and twisted, but was held so tightly that my struggles were useless…As the punishment proceeded the whip fell more and more upon existing weals, biting blacker or more wet, till my flesh quivered with accumulated pain, and with terror of the next blow coming. They soon conquered my determination not to cry, but while my will ruled my lips I used only Arabic, and before the end a merciful sickness choked my utterance.
+                        </h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/02.jpg">
+                        <h4>18</h4>
+                        <img src = "images/thumbs/02.jpg">
+                        <h5>
+                            Two thousand five hundred years ago they wept here over the newly dead. You see them hunting, drinking, making love. What else could you expect them to do? Translations will tell us nothing new.
+                        </h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href="#">
+                        <h4>19</h4>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/04.jpg">
+                        <h4>20</h4>
+                        <img src = "images/thumbs/04.jpg">
+                        <h5>
+                            We, the generous and rich in spirit, who stand at the sides of the streets like open fountains and would hinder no one from drinking from us, we do not know, alas! how to defend ourseles when we should like to do so; we have no means of preventing ourselves being made turbid and dark – we have no means of preventing the age in which we live casting its “up-to-date rubbish” into us, nor of hindering filthy birds throwing their excrement, the boys their trash, and fatigued resting travelers their misery, great and small, into us. But we do as we have always done; we take whatever is cast into us down into our depths – for we are deep, we do not forget – and once more grow clear.
+                        </h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/07.jpg">
+                        <h4>21</h4>
+                        <img src = "images/thumbs/07.jpg">
+                        <h5>
+                            We, the generous and rich in spirit, who stand at the sides of the streets like open fountains and would hinder no one from drinking from us, we do not know, alas! how to defend ourseles when we should like to do so; we have no means of preventing ourselves being made turbid and dark – we have no means of preventing the age in which we live casting its “up-to-date rubbish” into us, nor of hindering filthy birds throwing their excrement, the boys their trash, and fatigued resting travelers their misery, great and small, into us. But we do as we have always done; we take whatever is cast into us down into our depths – for we are deep, we do not forget – and once more grow clear.
+                        </h5>
+                    </a>
+                </div>
+                <div class = "polaroid" onmouseover = "colorChange(this)" onmouseout = "originalColor(this)">
+                    <a href = "images/fulls/01.jpg">
+                        <h4>22</h4>
+                        <img src = "images/thumbs/01.jpg">
+                        <h5>
+                            We, the generous and rich in spirit, who stand at the sides of the streets like open fountains and would hinder no one from drinking from us, we do not know, alas! how to defend ourseles when we should like to do so; we have no means of preventing ourselves being made turbid and dark – we have no means of preventing the age in which we live casting its “up-to-date rubbish” into us, nor of hindering filthy birds throwing their excrement, the boys their trash, and fatigued resting travelers their misery, great and small, into us. But we do as we have always done; we take whatever is cast into us down into our depths – for we are deep, we do not forget – and once more grow clear.
+                        </h5>
+                    </a>
+                </div>
+            </div>
+
+            <!--Right banner-->
+            <div class = "right_contents">
+                <h5>1212</h5>
+            </div>
+        </section>
+        <section class="footer">
+            (주) 자가격리커뮤니케이션
+            대표자: 이승현
+            사업자등록번호: XXX-XX-XXXXXXX
+            대표번호: 000-000-0000 (FAX: 000-000-0000)
+            주소: 서울시 관악구 관악로 1, 로스엔젤레스 103호
+        </section>
+    </body>
+</html>
